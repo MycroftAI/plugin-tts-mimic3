@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+import io
 import logging
 import re
 import typing
 import wave
-import io
 from pathlib import Path
 
 try:
@@ -71,10 +71,10 @@ except ImportError:
 
 
 from mimic3_tts import (
-    Mimic3TextToSpeechSystem,
-    Mimic3Settings,
-    SSMLSpeaker,
     AudioResult,
+    Mimic3Settings,
+    Mimic3TextToSpeechSystem,
+    SSMLSpeaker,
 )
 
 
