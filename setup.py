@@ -49,6 +49,7 @@ extras = {}
 for lang in [
     "de",
     "es",
+    "fa",
     "fr",
     "it",
     "nl",
