@@ -82,16 +82,19 @@ The plugin can be enabled in Mycroft with:
 mycroft-config set tts.module mimic3_tts_plug
 ```
 
-Additional options can be set by running:
-
-``` sh
-mycroft-config edit user
-```
-
-and adding the following:
+or you can manually add the following to `mycroft.conf` with `mycroft-config edit user`:
 
 ``` json
 "tts": {
+  "module": "mimic3_tts_plug"
+}
+```
+
+Additional options can be set in `mycroft.conf` like:
+
+``` json
+"tts": {
+  "module": "mimic3_tts_plug"
   "mimic3_tts_plug": {
     "<option>": <value>
   }

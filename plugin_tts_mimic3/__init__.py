@@ -98,6 +98,9 @@ class Mimic3TTSPlugin(TTS):
                 noise_scale=config.get("noise_scale"),
                 noise_w=config.get("noise_w"),
                 voices_download_dir=config.get("voices_download_dir"),
+                use_deterministic_compute=config.get(
+                    "use_deterministic_compute", False
+                ),
             )
         )
 
