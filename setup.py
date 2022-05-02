@@ -70,9 +70,9 @@ for dep, tags in extras.items():
 
 # -----------------------------------------------------------------------------
 
-PLUGIN_ENTRY_POINT = "mimic3_tts_plug = plugin_tts_mimic3:Mimic3TTSPlugin"
+PLUGIN_ENTRY_POINT = "mimic3_tts_plug = mycroft_plugin_tts_mimic3:Mimic3TTSPlugin"
 setup(
-    name="plugin_tts_mimic3",
+    name="mycroft_plugin_tts_mimic3",
     version=version,
     description="Text to speech plugin for Mycroft using Mimic3",
     url="http://github.com/MycroftAI/plugin-tts-mimic3",

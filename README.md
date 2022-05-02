@@ -35,13 +35,13 @@ sudo apt-get install libatomic1 libgomp1 libatlas-base-dev
 If you have Mycroft installed, you can install the plugin with:
 
 ``` sh
-mycroft-pip install plugin-tts-mimic3[all]
+mycroft-pip install mycroft-plugin-tts-mimic3[all]
 ```
 
 otherwise, you can use `pip` directly:
 
 ``` sh
-pip install plugin-tts-mimic3[all]
+pip install mycroft-plugin-tts-mimic3[all]
 ```
 
 Language support can be selectively installed by replacing `all` with:

@@ -18,8 +18,7 @@ set -eo pipefail
 # Directory of *this* script
 this_dir="$( cd "$( dirname "$0" )" && pwd )"
 
-# Kebab to snake case
-module_name="$(basename "${this_dir}" | sed -e 's/-/_/g')"
+module_name='mycroft_plugin_tts_mimic3'
 src_dir="${this_dir}/${module_name}"
 
 # Path to virtual environment
