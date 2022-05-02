@@ -20,7 +20,7 @@ import setuptools
 from setuptools import setup
 
 this_dir = Path(__file__).parent
-module_dir = this_dir / "plugin_tts_mimic3"
+module_dir = this_dir / "mycroft_plugin_tts_mimic3"
 
 # -----------------------------------------------------------------------------
 
@@ -80,7 +80,7 @@ setup(
     author_email="michael.hansen@mycroft.ai",
     license="Apache-2.0",
     packages=setuptools.find_packages(),
-    package_data={"plugin_tts_mimic3": ["VERSION", "py.typed"]},
+    package_data={"mycroft_plugin_tts_mimic3": ["VERSION", "py.typed"]},
     install_requires=requirements,
     extras_require=extras_require,
     classifiers=[

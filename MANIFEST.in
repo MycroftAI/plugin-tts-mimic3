@@ -2,4 +2,4 @@ include requirements.txt
 include requirements_dev.txt
 include LICENSE
 include README.md
-include plugin_tts_mimic3/VERSION
+include mycroft_plugin_tts_mimic3/VERSION
