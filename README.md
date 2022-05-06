@@ -9,7 +9,7 @@ Text to speech plugin for [Mycroft](https://mycroft.ai) using [Mimic 3](https://
 
 * Python 3.7 or higher
 * [Mimic 3](https://github.com/MycroftAI/mimic3)
-* [eSpeak-ng](https://github.com/espeak-ng/espeak-ng) (depending on the voice)
+* [gruut](https://github.com/rhasspy/gruut) or [eSpeak-ng](https://github.com/espeak-ng/espeak-ng) or [epitran](https://github.com/dmort27/epitran/) (depending on the voice)
 
 
 ## Installation
@@ -32,16 +32,10 @@ sudo apt-get install libatomic1 libgomp1 libatlas-base-dev
 
 ### Using pip
 
-If you have Mycroft installed, you can install the plugin with:
+You can install the plugin with:
 
 ``` sh
 mycroft-pip install mycroft-plugin-tts-mimic3[all]
-```
-
-otherwise, you can use `pip` directly:
-
-``` sh
-pip install mycroft-plugin-tts-mimic3[all]
 ```
 
 Language support can be selectively installed by replacing `all` with:
@@ -70,7 +64,7 @@ Install in editable mode using `pip`:
 
 ``` sh
 cd plugin-tts-mimic3/
-pip install -e ./[all]
+mycroft-pip install -e ./[all]
 ```
 
 
