@@ -56,7 +56,7 @@ for lang in [
     "ru",
     "sw",
 ]:
-    extras[f"mimic3-tts[{lang}]"] = [lang]
+    extras[f"mycroft-mimic3-tts[{lang}]"] = [lang]
 
 # Add "all" tag
 for tags in extras.values():
