@@ -104,7 +104,20 @@ class Mimic3TTSPlugin(TTS):
             )
         )
 
-        super().__init__(lang, config, Mimic3Validator(self), "wav")
+        ssml_tags = [
+            "speak",
+            "s",
+            "w",
+            "voice",
+            "prosody",
+            "say-as",
+            "break",
+            "sub",
+            "phoneme",
+        ]
+        super().__init__(
+            lang, config, Mimic3Validator(self), "wav", ssml_tags=ssml_tags
+        )
 
         if voice:
             self.tts.preload_voice(voice)
